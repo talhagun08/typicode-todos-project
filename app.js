@@ -1,4 +1,4 @@
-//Fetchin JSONPLACEHOLDER
+//Fetching JSONPLACEHOLDER
 const apiUrl = ('https://jsonplaceholder.typicode.com/todos');
 
 const getTodos = () => {
@@ -8,6 +8,7 @@ const getTodos = () => {
         data.forEach((todo)=> addTodoToDOM(todo));
     });
 };
+
 
 const addTodoToDOM = (todo) => {
     const div = document.createElement('div');
